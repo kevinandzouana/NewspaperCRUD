@@ -1,19 +1,19 @@
 package newspapercrud.domain.service;
 
 
-import jakarta.inject.Inject;
 import newspapercrud.dao.NewspaperRepository;
 import newspapercrud.dao.model.NewspaperEntity;
 import newspapercrud.domain.model.NewspaperDTO;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class NewspaperService {
 
       private final NewspaperRepository newspaperRepository;
 
-    @Inject
     public NewspaperService(NewspaperRepository newspaperRepository) {
         this.newspaperRepository = newspaperRepository;
     }

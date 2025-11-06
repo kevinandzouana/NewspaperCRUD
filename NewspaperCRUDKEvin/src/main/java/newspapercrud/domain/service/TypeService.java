@@ -1,19 +1,18 @@
 package newspapercrud.domain.service;
 
-
-import jakarta.inject.Inject;
 import newspapercrud.dao.TypeRepository;
 import newspapercrud.dao.model.TypeEntity;
 import newspapercrud.domain.model.TypeDTO;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class TypeService {
 
       private final TypeRepository typeRepository;
 
-    @Inject
     public TypeService(TypeRepository typeRepository) {
         this.typeRepository = typeRepository;
     }

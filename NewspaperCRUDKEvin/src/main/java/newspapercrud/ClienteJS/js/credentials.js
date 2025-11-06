@@ -1,5 +1,5 @@
 // Constants
-const API_URL = "http://localhost:8080/login";
+const API_URL = "http://localhost:8080/api/credentials/login";
 const ERROR_MESSAGES = {
   INVALID_CREDENTIALS: "Invalid username or password",
   NETWORK_ERROR: "Network error. Please try again later."
@@ -82,4 +82,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-

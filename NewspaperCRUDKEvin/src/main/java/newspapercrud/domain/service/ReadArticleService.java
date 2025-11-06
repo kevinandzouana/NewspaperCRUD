@@ -1,16 +1,16 @@
 package newspapercrud.domain.service;
 
 
-import jakarta.inject.Inject;
 import newspapercrud.dao.ReadArticleRepository;
 import newspapercrud.dao.model.ReadArticleEntity;
 import newspapercrud.domain.model.ReaderArticleDTO;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ReadArticleService {
 
     private final ReadArticleRepository readArticleRepository;
 
-    @Inject
     public ReadArticleService(ReadArticleRepository readArticleRepository) {
         this.readArticleRepository = readArticleRepository;
     }

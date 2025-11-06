@@ -1,10 +1,10 @@
 // Constants for Reader module
-const READER_API_BASE_URL = "http://localhost:8080";
+const READER_API_BASE_URL = "http://localhost:8080/api";
 const READER_ENDPOINTS = {
-  ARTICLE_READERS: (articleId) => `${READER_API_BASE_URL}/articles/${articleId}/readers`,
+  ARTICLE_READERS: (articleId) => `${READER_API_BASE_URL}/readers/article/${articleId}`,
   ALL_READERS: `${READER_API_BASE_URL}/readers`,
-  READER_DETAILS: (readerId) => `${READER_API_BASE_URL}/articles/${readerId}/reader`,
-  ARTICLE_READER_CRUD: `${READER_API_BASE_URL}/articles/readers`
+  READER_DETAILS: (readerId) => `${READER_API_BASE_URL}/readers/${readerId}`,
+  ARTICLE_READER_CRUD: `${READER_API_BASE_URL}/readarticles`
 };
 
 // DOM Elements for Reader module

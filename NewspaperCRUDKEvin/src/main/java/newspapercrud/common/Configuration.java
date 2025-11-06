@@ -8,10 +8,7 @@ package newspapercrud.common;
 import java.io.IOException;
 import java.util.Properties;
 
-/**
- *
- * @author Lucia
- */
+
 public class Configuration {
 
     private static Configuration instance=null;

@@ -5,7 +5,9 @@ import newspapercrud.dao.model.ArticleEntity;
 import newspapercrud.dao.model.TypeEntity;
 import newspapercrud.domain.model.ArticleDTO;
 import newspapercrud.domain.model.TypeDTO;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ArticleMapper {
     public ArticleEntity dtoToEntity(ArticleDTO dto) {
         return new ArticleEntity(

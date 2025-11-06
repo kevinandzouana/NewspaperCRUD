@@ -1,5 +1,5 @@
 // Constants
-const ARTICLE_API_BASE_URL = "http://localhost:8080";
+const ARTICLE_API_BASE_URL = "http://localhost:8080/api";
 const ARTICLE_ENDPOINTS = {
   ARTICLES: `${ARTICLE_API_BASE_URL}/articles`,
   TYPES: `${ARTICLE_API_BASE_URL}/types`,
@@ -139,7 +139,7 @@ const addArticle = async (event) => {
   
   const formData = {
     name: document.getElementById("addarticleName").value,
-    typeUI: {
+    typeDTO: {
       id: document.getElementById("addTypeNames").value,
       name: document.getElementById("addTypeNames").options[document.getElementById("addTypeNames").selectedIndex].text
     },
